@@ -6,6 +6,8 @@ namespace to_do_list
         static void Main()
         {   
             ApplicationConfiguration.Initialize();
+            
+            
             Application.Run(new Form1());
         }
     }

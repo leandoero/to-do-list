@@ -13,23 +13,26 @@ namespace to_do_list
             classForLogic = new ClassForLogic();
             inputTask = string.Empty;
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            panel1.Visible = !panel1.Visible;
+            panel1.BringToFront();
+            panel1.Visible = true;
             panel2.Visible = false;
+
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
-            panel2.Visible = !panel2.Visible;
+            panel2.BringToFront();
+            panel2.Visible = true;
             panel1.Visible = false;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
             inputTask = textBox1.Text;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(inputTask))
             {
@@ -39,6 +42,6 @@ namespace to_do_list
             }
         }
 
-        
+      
     }
 }
