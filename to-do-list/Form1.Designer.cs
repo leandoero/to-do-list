@@ -157,7 +157,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(294, 232);
+            button6.Location = new Point(211, 321);
             button6.Name = "button6";
             button6.Size = new Size(94, 29);
             button6.TabIndex = 2;
@@ -167,10 +167,11 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(269, 308);
+            listBox1.Location = new Point(144, 95);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(150, 104);
+            listBox1.Size = new Size(244, 204);
             listBox1.TabIndex = 1;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // label2
             // 
